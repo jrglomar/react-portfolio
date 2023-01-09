@@ -14,9 +14,9 @@ const Introduction = () => {
               John Raven Glomar
             </span>
             <div className="text-gray-dark dark:text-gray w-3/4 ">
-              I am a junior software engineer. I earned a bachelor's degree in
-              information technology at Polytechnic University of the
-              Philippines Quezon City. 
+              I am a junior software engineer. I graduated from the Polytechnic
+              University of the Philippines in Quezon City with a bachelor's
+              degree in Information Technology.
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ const Introduction = () => {
   );
 };
 
-const introductionWrapperStyle = `h-screen flex flex-col justify-center font-monospace text-[1.2rem] mx-[2em]`;
+const introductionWrapperStyle = `h-screen flex flex-col justify-center font-monospace text-[1.2rem] mx-[2em] py-[20vh]`;
 // const btnClickHereStyle = `p-3 w-80 border-2 border-sub-secondary text-sub-main hover:bg-sub-main hover:text-sub-quaternary rounded-full`;
 const textContentWrapperStyle = `flex flex-col pl-[15vw] items-center py-[6em] w-auto text-main dark:text-gray-light`;
 
