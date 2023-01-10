@@ -53,6 +53,6 @@ const Experience = () => {
 };
 
 const experienceWrapperStyle = `h-screen py-[30vh] flex justify-center items-center font-monospace text-[1.2rem] w-full`;
-const experienceContentStyle = `flex py-[5vh] flex-col items-start w-2/3`;
+const experienceContentStyle = `flex py-[5vh] flex-col items-start w-5/6 desktop:w-2/3`;
 
 export default Experience;

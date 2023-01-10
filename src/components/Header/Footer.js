@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className={footerWrapperStyle}>
       <div>
-        <div className="fixed m-5 h-[194px] desktop:h-[364px] bottom-8">
+        <div className="fixed m-5 h-[164px] desktop:h-[364px] bottom-8">
           <div className="flex flex-col items-center">
             <a
               href="https://github.com/jrglomar"
@@ -62,11 +62,11 @@ const Footer = () => {
           <span className={lineStyle}></span>
         </div>
       </div>
-      <div className="fixed right-0 m-5 h-[180px] desktop:h-[350px] bottom-8">
+      <div className="fixed right-0 m-5 h-[150px] desktop:h-[350px] bottom-8">
         <div className="flex flex-col items-center">
           <a
             href="mailto:jrglomar016@gmail.com"
-            className="footer-email text-gray-dark dark:text-gray-light"
+            className="footer-email text-sub-quaternary dark:text-sub-tertiary hover:text-[1.2rem]"
           >
             jrglomar016@gmail.com
           </a>
@@ -78,8 +78,8 @@ const Footer = () => {
   );
 };
 
-const iconStyle = `text-gray-dark dark:text-gray-light text-[1.8rem] py-2`;
-const footerWrapperStyle = `flex justify-between fixed left-0 bottom-0 w-full py-5 font-monospace z-10`;
-const lineStyle = `inline-block w-[1px] h-[100vh] align-middle desktop:border-2 border-[1px] border-gray-dark dark:border-gray-light bg-secondary dark:bg-sub-quaternary m-4`;
+const iconStyle = `text-sub-quaternary dark:text-sub-tertiary text-[1.8rem] py-2 hover:text-[2.2rem]`;
+const footerWrapperStyle = `hidden desktop:flex justify-between fixed left-0 bottom-0 w-full py-5 font-monospace z-10`;
+const lineStyle = `inline-block w-[1px] h-[100vh] align-middle desktop:border-2 border-[1px] border-gray-dark dark:border-gray-light bg-gray-dark dark:bg-gray-light m-4`;
 
 export default Footer;

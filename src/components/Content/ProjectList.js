@@ -11,14 +11,14 @@ const ProjectList = () => {
         <div className="flex justify-evenly flex-wrap">
           {PROJECT_LIST.map((project) => (
             <Fade key={project.title} duration={2500} cascade bottom>
-              <div className="m-4 p-4 w-1/4 border-y-2 rounded-lg border-b-sub-tertiary dark:border-b-secondary border-tertiary dark:border-sub-tertiary">
+              <div className="m-4 p-4 w-1/2 desktop:w-1/4 border-y-2 rounded-lg border-b-sub-tertiary dark:border-b-secondary border-tertiary dark:border-sub-tertiary">
                 <a
                   href={project.links}
                   target="_blank"
                   rel="noreferrer"
                   className="flex justify-center"
                 >
-                  <button className="text-gray-light text-center rounded-lg bg-secondary dark:bg-sub-quaternary m-2 p-2 sm:text-[0.5rem] text-[0.8rem] w-full hover:bg-tertiary dark:hover:bg-sub-tertiary">
+                  <button className="text-gray-light text-center rounded-lg bg-sub-quaternary dark:bg-sub-quaternary  dark:text-gray-light m-2 p-2 sm:text-[0.6rem] text-[0.8rem] w-full hover:bg-sub-tertiary dark:hover:bg-sub-tertiary">
                     {project.title}
                   </button>
                 </a>
@@ -40,6 +40,12 @@ const ProjectList = () => {
 };
 
 const PROJECT_LIST = [
+  {
+    title: "CSV Academy Practice Project",
+    description: `I maintained and update the design of PSUCCESS.`,
+    stacks: ["Java", "Spring Boot"],
+    links: ["https://github.com/jrglomar/week5day1project"],
+  },
   {
     title: "Web Portfolio",
     description: `It is a web portfolio made with ReactJS and styled it with tailwind css.`,
@@ -115,12 +121,6 @@ const PROJECT_LIST = [
     description: `It is a web app that handles assets information such as school equipments.`,
     stacks: ["Laravel", "MySQL", "Javascript", "Bootstrap"],
     links: ["https://github.com/jrglomar/aims"],
-  },
-  {
-    title: "PSUCCESS",
-    description: `I maintained and update the design of PSUCCESS.`,
-    stacks: ["Wordpress"],
-    links: ["https://psuccess.ph/"],
   },
   {
     title: "Forget-Me-Not",

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="about">
       <Fade duration={2500}>
-        <div className="h-screen  flex justify-center font-monospace m-[10vw] ">
+        <div className="h-screen flex justify-center font-monospace m-[15vw] ">
           <div className=" justify-evenly hidden desktop:flex tablet:flex">
             <div className="flex items-center justify-center">
               <img
@@ -24,7 +24,7 @@ const About = () => {
               <span className="inline-block w-1/2 h-[3px] align-middle bg-tertiary dark:bg-sub-quaternary m-4"></span>
             </div>
             <Fade duration={2500} cascade bottom>
-              <div className="text-[0.9rem] text-gray-dark dark:text-gray">
+              <div className="text-[1rem] text-gray-dark dark:text-gray">
                 <div className="pb-5">
                   Hi, you can call me Raven. I was born in Quezon City.{" "}
                   <span className="text-secondary dark:text-sub-secondary">

@@ -120,8 +120,9 @@ const SkillList = () => {
           </li>
         </ul>
       </div>
+
       <div className="">
-        <span className={ulTitle}>Others</span>
+        <span className={ulTitle}><br className="flex desktop:hidden tablet:hidden"></br>Others</span>
         <ul className={ulStyle}>
           <li>
             {" "}
@@ -150,8 +151,8 @@ const SkillList = () => {
   );
 };
 
-const ulStyle = ` text-[0.8rem]  text-gray-dark dark:text-gray`;
-const ulTitle = `text-[0.9rem] font-[] text-secondary dark:text-sub-secondary`;
+const ulStyle = ` text-[1rem]  text-gray-dark dark:text-gray`;
+const ulTitle = `text-[1.1rem] text-secondary dark:text-sub-secondary`;
 const faStyleArrow = `inline-block text-[0.6rem] pr-2 text-tertiary dark:text-sub-quaternary`;
 
 export default SkillList;

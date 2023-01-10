@@ -42,7 +42,7 @@ const ExperienceList = (props) => {
 
         <Fade duration={2500} cascade bottom>
           <div className="flex flex-row justify-between py-10  ">
-            <ul className=" text-main dark:text-sub-main border-l-2 ">
+            <ul className=" text-main dark:text-sub-main ">
               <li>
                 <button
                   onClick={handleBtnExperience}
