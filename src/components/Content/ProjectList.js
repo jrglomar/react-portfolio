@@ -10,22 +10,24 @@ const ProjectList = () => {
       <div className="flex flex-col">
         <div className="flex justify-evenly flex-wrap">
           {PROJECT_LIST.map((project) => (
-            <Fade duration={2500} cascade bottom>
-              <div className="m-4 p-10 w-1/4 border-y-4 rounded-lg border-t-sub-tertiary dark:border-t-secondary border-tertiary dark:border-sub-tertiary">
+            <Fade key={project.title} duration={2500} cascade bottom>
+              <div className="m-4 p-4 w-1/4 border-y-2 rounded-lg border-b-sub-tertiary dark:border-b-secondary border-tertiary dark:border-sub-tertiary">
                 <a
                   href={project.links}
                   target="_blank"
                   rel="noreferrer"
                   className="flex justify-center"
                 >
-                  <button className="text-gray-light text-center bg-secondary dark:bg-sub-quaternary m-2 p-2 text-[0.8rem] w-full hover:bg-tertiary dark:hover:bg-sub-tertiary">
+                  <button className="text-gray-light text-center rounded-lg bg-secondary dark:bg-sub-quaternary m-2 p-2 sm:text-[0.5rem] text-[0.8rem] w-full hover:bg-tertiary dark:hover:bg-sub-tertiary">
                     {project.title}
                   </button>
                 </a>
 
                 <div className="text-gray-dark dark:text-gray text-[0.8rem]">
                   {project.stacks.map((stack) => (
-                    <li className="">{stack}</li>
+                    <li key={stack} className="">
+                      {stack}
+                    </li>
                   ))}
                 </div>
               </div>

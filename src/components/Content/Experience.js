@@ -11,25 +11,25 @@ const Experience = () => {
   const handleBtnExperience = (selectedExp) => {
     if (selectedExp === "Cognizant Softvision") {
       setExpDescription(
-        "I am hired as Junior Software Engineer at Cognizant Softvision last October 2022."
+        "I started working for Cognizant Softvision in October 2022 as a Junior Software Engineer."
       );
       setExpJobTitle("Junior Software Engineer");
       setExpJobCompany("Cognizant Softvision");
     } else if (selectedExp === "PUPQC") {
       setExpDescription(
-        "I lead the developer team that developed a project called Faculty Monitoring System a web application  as our OJT in our school last June 2022."
+        "As our OJT in our school in June 2022, I was in charge of the development team that created a project called Faculty Monitoring System, a web application."
       );
       setExpJobTitle("Web Developer");
       setExpJobCompany("Polytechnic University of the Philippines");
     } else if (selectedExp === "Freelance") {
       setExpDescription(
-        "When I was a student I used to work on some freelance project mostly a Web Application."
+        "I used to work on some freelance projects while I was a student, primarily web applications."
       );
       setExpJobTitle("Software Developer");
       setExpJobCompany("Freelance");
     } else if (selectedExp === "Software Research Group") {
       setExpDescription(
-        "I've been part of a group called Software Research Group in our school who aims to develop school system solution that helped university staff to fullfil their work with efficiency."
+        "I've been a member of a group at my school called the Software Research Group that tries to provide school system solutions that assist university professionals in doing their duties effectively."
       );
       setExpJobTitle("Web Developer");
       setExpJobCompany("Software Research Group");

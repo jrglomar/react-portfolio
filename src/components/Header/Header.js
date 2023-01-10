@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import {
   // FaHouseUser,
   // FaInfo,
@@ -8,17 +8,35 @@ import {
 } from "react-icons/fa";
 
 const Header = () => {
-  const [darkToggle, setDarkToggle] = useState(true);
+  const [darkToggle, setDarkToggle] = useState(false);
 
   const handleLightToDarkToggle = () => {
     document.documentElement.classList.add(`dark`);
+    localStorage.theme = "dark";
     setDarkToggle(true);
   };
 
   const handleDarkToLightToggle = () => {
     document.documentElement.classList.remove(`dark`);
+    localStorage.theme = "light";
     setDarkToggle(false);
   };
+
+  const getPreferMode = () => {
+    if (
+      localStorage.theme === "light" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      handleDarkToLightToggle();
+    } else {
+      handleLightToDarkToggle();
+    }
+  };
+
+  useEffect(() => {
+    getPreferMode();
+  });
 
   return (
     <div>

@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const SkillList = () => {
   return (
-    <Fade duration={2500} cascade right>
+    <Fade duration={2500} cascade bottom>
       <div className="">
         <span className={ulTitle}>Frontend</span>
         <ul className={ulStyle}>
@@ -150,8 +150,8 @@ const SkillList = () => {
   );
 };
 
-const ulStyle = ` text-[0.9rem]  text-gray-dark dark:text-gray`;
-const ulTitle = `text-[1rem] font-[] text-secondary dark:text-sub-secondary`;
-const faStyleArrow = `inline-block text-[0.7rem] pr-2 text-tertiary dark:text-sub-quaternary`;
+const ulStyle = ` text-[0.8rem]  text-gray-dark dark:text-gray`;
+const ulTitle = `text-[0.9rem] font-[] text-secondary dark:text-sub-secondary`;
+const faStyleArrow = `inline-block text-[0.6rem] pr-2 text-tertiary dark:text-sub-quaternary`;
 
 export default SkillList;
