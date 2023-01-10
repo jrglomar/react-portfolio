@@ -33,34 +33,26 @@ const Header = () => {
               )}
               {darkToggle && (
                 <button onClick={handleDarkToLightToggle}>
-                  <FaSun className="text-sub-tertiary text-[1.5rem]" />
+                  <FaSun className="text-sub-main text-[1.5rem]" />
                 </button>
               )}
             </div>
             <div className="flex flex-row justify-evenly text-gray-light ">
               <a className={aStyle} href="#introduction">
                 {/* <FaHouseUser className={faStyle} />{" "} */}
-                <span className={spanStyle}>
-                  Home
-                </span>
+                <div className={spanStyle}>Home</div>
               </a>
               <a className={aStyle} href="#about">
                 {/* <FaInfo className={faStyle} /> */}
-                <span className={spanStyle}>
-                  About
-                </span>
+                <span className={spanStyle}>About</span>
               </a>
               <a className={aStyle} href="#experience">
                 {/* <FaBriefcase className={faStyle} /> */}
-                <span className={spanStyle}>
-                  Experiences
-                </span>
+                <span className={spanStyle}>Experiences</span>
               </a>
               <a className={aStyle} href="#project">
                 {/* <FaBriefcase className={faStyle} /> */}
-                <span className={spanStyle}>
-                  Projects
-                </span>
+                <span className={spanStyle}>Projects</span>
               </a>
             </div>
           </div>
@@ -71,6 +63,6 @@ const Header = () => {
 };
 
 // const faStyle = `text-sub-quaternary dark:text-sub-secondary text-[1.2rem] mt-[2px]`;
-const spanStyle = `px-3 text-gray-dark dark:text-sub-tertiary`;
+const spanStyle = `px-3  text-gray-dark dark:text-sub-main`;
 const aStyle = `px-[3vw] flex flex-row font-semibold`;
 export default Header;
