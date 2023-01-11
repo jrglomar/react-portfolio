@@ -9,7 +9,7 @@ const Introduction = () => {
           <div className="font-semibold text-tertiary dark:text-sub-tertiary">
             Hi, my name is
           </div>
-          <span className="font-bold text-[5rem] desktop:text-[5rem] text-secondary dark:text-sub-secondary">
+          <span className="font-bold text-[5rem] desktop:text-[5rem] text-secondary dark:text-sub-secondary animate__animated animate__pulse animate__infinite  animate__slow">
             John Raven Glomar
           </span>
           <div className="text-gray-dark dark:text-gray w-full text-[1rem]">
