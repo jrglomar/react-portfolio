@@ -41,7 +41,7 @@ const ProjectList = () => {
 
 const PROJECT_LIST = [
   {
-    title: "CSV Academy Practice Project",
+    title: "CSV Academy Project",
     description: `I maintained and update the design of PSUCCESS.`,
     stacks: ["Java", "Spring Boot"],
     links: ["https://github.com/jrglomar/week5day1project"],
