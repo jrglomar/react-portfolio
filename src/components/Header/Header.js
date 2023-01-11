@@ -43,7 +43,7 @@ const Header = () => {
       <div className="fixed bg-sub-main dark:bg-main  font-monospace w-full z-10">
         <div className="text-[1.1rem] mx-[2em]">
           <div className="flex items-center justify-between py-5">
-            <div className="flex justify-center tablet:justify-start desktop:justify-start w-full py-5 pr-10">
+            <div className="flex justify-center tablet:justify-start desktop:justify-start w-full py-5">
               {!darkToggle && (
                 <button
                   className="flex flex-row"

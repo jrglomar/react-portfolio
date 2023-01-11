@@ -8,7 +8,7 @@ const About = () => {
     <section id="about">
       <Fade duration={2500}>
         <div className="h-screen flex justify-center font-monospace m-[15vw] ">
-          <div className=" justify-evenly hidden desktop:flex tablet:flex">
+          <div className=" justify-evenly hidden desktop:flex">
             <div className="flex items-center justify-center">
               <img
                 className="rounded-lg"
@@ -18,7 +18,7 @@ const About = () => {
               ></img>
             </div>
           </div>
-          <div className="flex flex-col justify-center w-full desktop:pl-[10vw] tablet:pl-[10vw] pl-0 text-secondary dark:text-sub-main ">
+          <div className="flex flex-col justify-center w-full desktop:pl-[10vw]  pl-0 text-secondary dark:text-sub-main ">
             <div className="float-left py-5 font-semibold text-sub-quaternary dark:text-sub-tertiary text-[1.2rem] ">
               About Me{" "}
               <span className="inline-block w-1/2 h-[3px] align-middle bg-tertiary dark:bg-sub-quaternary m-4"></span>

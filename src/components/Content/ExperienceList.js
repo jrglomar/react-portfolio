@@ -94,7 +94,7 @@ const ExperienceList = (props) => {
   );
 };
 
-const companyTitleStyle = `p-2 mx-10 text-[1rem] text-gray-dark dark:text-gray-light dark:hover:text-gray-light hover:text-gray-light text-left hover:bg-secondary dark:hover:bg-sub-quaternary`;
+const companyTitleStyle = `p-2 mx-4 desktop:mx-10 tablet:mx-10 text-[1rem] text-gray-dark dark:text-gray-light dark:hover:text-gray-light hover:text-gray-light text-left hover:bg-secondary dark:hover:bg-sub-quaternary`;
 const companyActiveStyle = `text-sub-main bg-secondary dark:bg-sub-quaternary`;
 
 export default ExperienceList;
